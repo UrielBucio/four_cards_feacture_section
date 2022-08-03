@@ -21,7 +21,7 @@ body {
     min-height: 100vh;
 }
 .main_container {   
-    margin: 5.7rem auto;
+    margin: 5.3rem auto;
     width: 315px;
 }
 .text_container {
@@ -54,22 +54,22 @@ body {
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     height: 235px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     padding: 25px 30px 30px;
-    position: relative;
     width: 315px;
+    text-align: end;
 }
 .card_item h2 {
+    text-align: start;
     color: var(--veryDarkBlue);
 }
 .card_item p {
+    text-align: start;
     color: var(--grayishBlue);
     font-size: 0.85rem;
     line-height: 25px;
 }
 .card_item img {
-    position: absolute;
-    left: 220px;
     margin-top: 30px;
 }
 .card_supervisor {
@@ -86,3 +86,26 @@ body {
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (min-width:980px) {
+    .main_container {
+        width: 100%;
+    }
+    .text_container {
+        width: 500px;
+        margin: 0 auto 65px;
+    }
+    .text_container h1, .text_container p {
+        font-size: 2.3rem;
+    }
+    .card_container {
+        column-gap: 30px;
+        flex-flow: row nowrap;
+    }
+    .card_item {
+        height: 250px;
+        width: 350px;
+    }
+    .card_item img {
+        margin-top: 40px;
+    }
+}

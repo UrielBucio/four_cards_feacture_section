@@ -2,39 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
   <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
+  <main class="main_container">
+    <section class="text_container">
+      <h1>Reliable, efficient delivery</h1>
+      <p>Powered by Technology</p>
+      <span>Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful</span>
+    </section>
+    <div class="card_container">
+      <section class="card_item card_supervisor">
+        <h2>Supervisor</h2>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="./src/img/icon-supervisor.svg" alt="icon-supervisor">
+      </section>
+      <section class="card_item card_team">
+        <h2>Team Builder</h2>
+        <p>Scans our talent network to create the optimal team for your project</p>
+        <img src="./src/img/icon-team-builder.svg" alt="icon-team-builder">
+      </section>
+      <section class="card_item card_karma">
+        <h2>Karma</h2>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <img src="./src/img/icon-karma.svg" alt="icon-karma">
+      </section>
+      <section class="card_item card_calculator">
+        <h2>Calculator</h2>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src="./src/img/icon-calculator.svg" alt="icon-calculator">
+      </section>
+    </div>
+  </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
